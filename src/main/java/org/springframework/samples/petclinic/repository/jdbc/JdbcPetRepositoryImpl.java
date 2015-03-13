@@ -91,7 +91,7 @@ public class JdbcPetRepositoryImpl implements PetRepository {
                     params,
                     new JdbcPetRowMapper());
         } catch (EmptyResultDataAccessException ex) {
-            throw new ObjectRetrievalFailureException(Pet.class, Integer.valueOf(id));
+            throw new ObjectRetrievalFailureException(Pet.class, new Integer(id));
         }
         Owner owner = this.ownerRepository.findById(pet.getOwnerId());
         owner.addPet(pet);
