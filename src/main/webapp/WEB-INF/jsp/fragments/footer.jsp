@@ -2,9 +2,13 @@
 
 <table class="footer">
     <tr>
-        <td width="70%"></td>
-        <td align="right"><img src="<spring:url value="/resources/images/spring-pivotal-logo.png" htmlEscape="true" />"
-                               alt="Sponsored by Pivotal"/></td>
+        
+        <td><!--img src="<spring:url value="/resources/images/spring-pivotal-logo.png" htmlEscape="true" />"
+                               alt="Sponsored by Pivotal"/-->
+								<p>&copy; 2002 - 2015 Monsanto Company - Todos los derechos reservados</p> </td>
+								
+		<td>NEW LINE TEST</td>
+							   
     </tr>
 </table>
 
