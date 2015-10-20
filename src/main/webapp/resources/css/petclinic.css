@@ -1,7 +1,6 @@
 .container {
     padding-top: 10px;
-    margin-left: 50px;
-    width: 700px;
+    width: 800px;
 }
 
 .form-horizontal {
@@ -13,9 +12,19 @@ input[type="text"] {
 }
 
 .navbar .nav > li > a {
-    color: #000000;
+    color: #0066CC;
+    
 }
+
+.navbar .nav > li > a:hover {
+    color: #66CCFF;
+}
+
 
 .form-horizontal .control-label {
     text-align: left;
+}
+
+.table-striped tbody>tr:nth-child(odd)>td,.table-striped tbody>tr:nth-child(odd)>th {
+	background: rgba(0, 0, 0, 0.72);
 }

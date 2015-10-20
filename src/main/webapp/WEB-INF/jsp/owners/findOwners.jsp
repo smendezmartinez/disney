@@ -13,7 +13,11 @@
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
-    <h2>Find Products</h2>
+<div id="box" style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/imgad4.jpg)">
+&nbsp;
+<div style="color: #FFF;padding:20px; margin:20px; width:500px; background: rgba(0, 0, 0, 0.72) none repeat scroll 0% 0% padding-box; border-radius: 0.352941em; 
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
+    <h2>Search Flights</h2>
 
     <spring:url value="/owners.html" var="formUrl"/>
     <form:form modelAttribute="owner" action="${fn:escapeXml(formUrl)}" method="get" class="form-horizontal"
@@ -24,16 +28,20 @@
                 <form:input path="lastName" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
-            <div class="form-actions">
-                <button type="submit">Find Owner</button>
-            </div>
+            <!-- div class="form-actions"-->
+                <button style="background:#FFBE00; color: #3D3100; border-color:#AA8700; font-weight: bold; font-size: 1em;border-width: 1px 1px 2px; border-radius: 0.235294em;margin: 1.41176em 1.41176em 0px 0px;padding: 10px;" 
+                type="submit">Search</button>
+            <!-- /div -->
         </fieldset>
     </form:form>
 
-	
-	<div>
-	<img src="/petclinic/resources/images/hero-asgrow1.jpg" alt="testing" >
+</div>
+&nbsp;
 	</div>
+	
+	<!-- div>
+	<img src="/petclinic/resources/images/hero-asgrow1.jpg" alt="testing" >
+	</div -->
 	
 	
 	

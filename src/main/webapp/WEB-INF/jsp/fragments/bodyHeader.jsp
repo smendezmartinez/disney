@@ -1,16 +1,19 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<spring:url value="/resources/images/monsanto_banner.jpg" var="banner"/> 
+
+<spring:url value="/resources/images/banner.jpg" var="banner"/> 
 <img src="${banner}"/>
 
-<div class="navbar" style="width: 700px;">
-    <div class="navbar-inner">
+
+<div class="navbar" style="width: 800px;">
+    <!-- div class="navbar-inner" -->
+    &nbsp;&nbsp;
         <ul class="nav">
             <li style="width: 100px;"><a href="<spring:url value="/" htmlEscape="true" />"><i class="icon-home"></i>
                 Home</a></li>
             <li style="width: 150px;"><a href="<spring:url value="/owners/find.html" htmlEscape="true" />"><i
-                    class="icon-search"></i> Find Products</a></li>
+                    class="icon-search"></i> Search Flights</a></li>
             <li style="width: 140px;"><a href="<spring:url value="/vets.html" htmlEscape="true" />"><i
                     class="icon-th-list"></i> News </a></li>
             <li style="width: 90px;"><a href="<spring:url value="/oups.html" htmlEscape="true" />"
@@ -19,6 +22,6 @@
             <li style="width: 80px;"><a href="#" title="not available yet. Work in progress!!"><i
                     class=" icon-question-sign"></i> Help</a></li>
         </ul>
-    </div>
+    <!-- /div -->
 </div>
 	

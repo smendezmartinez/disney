@@ -9,12 +9,18 @@
 <jsp:include page="fragments/headTag.jsp"/>
 
 <body>
+
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
+  &nbsp;
+    
     <h2><fmt:message key="welcome"/></h2>
-    <spring:url value="/resources/images/logo.png" htmlEscape="true" var="petsImage"/>
+    <spring:url value="/resources/images/homepage.jpg" htmlEscape="true" var="petsImage"/>
     <img src="${petsImage}"/>
 
+
+	
+<p>
     <jsp:include page="fragments/footer.jsp"/>
 
 </div>
