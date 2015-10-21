@@ -39,9 +39,9 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
 &nbsp;
 	</div>
 	
-	<div>
+	<!--div>
 	<img src="/petclinic/resources/images/imgad4.jpg" alt="testing" >
-	</div>
+	</div-->
 	
 		
     <br/>
