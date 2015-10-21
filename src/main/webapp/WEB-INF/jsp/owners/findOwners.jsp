@@ -28,10 +28,10 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
                 <form:input path="lastName" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
-            <!-- div class="form-actions"-->
+            <div class="form-actions">
                 <button style="background:#FFBE00; color: #3D3100; border-color:#AA8700; font-weight: bold; font-size: 1em;border-width: 1px 1px 2px; border-radius: 0.235294em;margin: 1.41176em 1.41176em 0px 0px;padding: 10px;" 
                 type="submit">Search</button>
-            <!-- /div -->
+            </div>
         </fieldset>
     </form:form>
 
@@ -39,15 +39,11 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
 &nbsp;
 	</div>
 	
-	<!-- div>
-	<img src="/petclinic/resources/images/hero-asgrow1.jpg" alt="testing" >
-	</div -->
+	<div>
+	<img src="/petclinic/resources/images/imgad4.jpg" alt="testing" >
+	</div>
 	
-	
-	
-	
-	
-	
+		
     <br/>
     <a href='<spring:url value="/owners/new" htmlEscape="true"/>'>Add Owner</a>
 
