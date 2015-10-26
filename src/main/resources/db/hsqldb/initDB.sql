@@ -5,6 +5,7 @@ DROP TABLE visits IF EXISTS;
 DROP TABLE pets IF EXISTS;
 DROP TABLE types IF EXISTS;
 DROP TABLE owners IF EXISTS;
+DROP TABLE users IF EXISTS;
 
 
 CREATE TABLE vets (
@@ -12,6 +13,16 @@ CREATE TABLE vets (
   first_name VARCHAR(30),
   last_name  VARCHAR(30)
 );
+CREATE TABLE users (
+  userid INTEGER IDENTITY PRIMARY KEY,
+  password VARCHAR(8)
+);
+CREATE TABLE token (
+  token_id INTEGER IDENTITY PRIMARY KEY,
+  token  VARCHAR(16)
+);
+ALTER TABLE token ADD CONSTRAINT fk_userid FOREIGN KEY (token_id) REFERENCES users (userid);
+
 CREATE INDEX vets_last_name ON vets (last_name);
 
 CREATE TABLE specialties (
