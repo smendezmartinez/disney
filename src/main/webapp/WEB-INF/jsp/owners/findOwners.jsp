@@ -13,11 +13,11 @@
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
-<div id="box" style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/imgad4.jpg)">
+<div id="box" style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/mfs3.jpg)">
 &nbsp;
 <div style="color: #FFF;padding:20px; margin:20px; width:500px; background: rgba(0, 0, 0, 0.72) none repeat scroll 0% 0% padding-box; border-radius: 0.352941em; 
 box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
-    <h2>Search Flights</h2>
+    <h2>Online Services</h2>
 
     <spring:url value="/owners.html" var="formUrl"/>
     <form:form modelAttribute="owner" action="${fn:escapeXml(formUrl)}" method="get" class="form-horizontal"
@@ -38,10 +38,6 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
 </div>
 &nbsp;
 	</div>
-	
-	<!--div>
-	<img src="/petclinic/resources/images/imgad4.jpg" alt="testing" >
-	</div-->
 	
 		
     <br/>
