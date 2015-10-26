@@ -17,11 +17,11 @@ CREATE TABLE vets (
 );
 CREATE TABLE mfs_users (
   userid INTEGER IDENTITY PRIMARY KEY,
-  passwd VARCHAR(8)
+  passwd VARCHAR(30)
 );
 CREATE TABLE token (
   token_id INTEGER,
-  token  VARCHAR(16)
+  token  VARCHAR(30)
 );
 ALTER TABLE token ADD CONSTRAINT fk_userid FOREIGN KEY (token_id) REFERENCES mfs_users (userid);
 
