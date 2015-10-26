@@ -24,7 +24,7 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
                id="search-owner-form">
         <fieldset>
             <div class="control-group" id="lastName">
-                <label class="control-label">Last name </label>
+                <label class="control-label">User ID </label>
                 <form:input path="lastName" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
