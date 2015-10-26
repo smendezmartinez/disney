@@ -13,15 +13,15 @@ CREATE TABLE vets (
   first_name VARCHAR(30),
   last_name  VARCHAR(30)
 );
-CREATE TABLE users (
+CREATE TABLE mfs_users (
   userid INTEGER IDENTITY PRIMARY KEY,
-  password VARCHAR(8)
+  passwd VARCHAR(8)
 );
 CREATE TABLE token (
-  token_id INTEGER IDENTITY PRIMARY KEY,
+  token_id INTEGER,
   token  VARCHAR(16)
 );
-ALTER TABLE token ADD CONSTRAINT fk_userid FOREIGN KEY (token_id) REFERENCES users (userid);
+ALTER TABLE token ADD CONSTRAINT fk_userid FOREIGN KEY (token_id) REFERENCES mfs_users (userid);
 
 CREATE INDEX vets_last_name ON vets (last_name);
 

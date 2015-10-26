@@ -6,7 +6,7 @@ INSERT INTO vets VALUES (5, 'Henry', 'Stevens');
 INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins');
 
 INSERT INTO users VALUES (1011,'secret')
-INSERT INTO users VALUES (1012,'password')
+INSERT INTO users VALUES (1012,'passwd')
 INSERT INTO users VALUES (1013,'admin123')
 INSERT INTO users VALUES (1014,'october123')
 INSERT INTO users VALUES (1015,'devops123')
