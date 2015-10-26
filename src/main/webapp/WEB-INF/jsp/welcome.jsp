@@ -15,7 +15,7 @@
   &nbsp;
     
     <h2><fmt:message key="welcome"/></h2>
-    <spring:url value="/resources/images/homepage.jpg" htmlEscape="true" var="petsImage"/>
+    <spring:url value="/resources/images/mfs4.png" htmlEscape="true" var="petsImage"/>
     <img src="${petsImage}"/>
 
 
