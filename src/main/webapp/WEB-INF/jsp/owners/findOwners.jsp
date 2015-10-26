@@ -30,7 +30,7 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);">
             </div>
             <!--div class="form-actions"-->
                 <button style="background:#FFBE00; color: #3D3100; border-color:#AA8700; font-weight: bold; font-size: 1em;border-width: 1px 1px 2px; border-radius: 0.235294em;margin: 1.41176em 1.41176em 0px 0px;padding: 10px;" 
-                type="submit">Search</button>
+                type="submit">Submit</button>
             <!--/div-->
         </fieldset>
     </form:form>
