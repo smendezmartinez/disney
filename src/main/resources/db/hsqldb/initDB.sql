@@ -5,7 +5,8 @@ DROP TABLE visits IF EXISTS;
 DROP TABLE pets IF EXISTS;
 DROP TABLE types IF EXISTS;
 DROP TABLE owners IF EXISTS;
-DROP TABLE users IF EXISTS;
+
+DROP TABLE mfs_users IF EXISTS;
 DROP TABLE token IF EXISTS;
 
 
@@ -23,6 +24,7 @@ CREATE TABLE token (
   token  VARCHAR(16)
 );
 ALTER TABLE token ADD CONSTRAINT fk_userid FOREIGN KEY (token_id) REFERENCES mfs_users (userid);
+
 
 CREATE INDEX vets_last_name ON vets (last_name);
 

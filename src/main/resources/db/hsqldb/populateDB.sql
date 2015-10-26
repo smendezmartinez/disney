@@ -5,11 +5,11 @@ INSERT INTO vets VALUES (4, 'Rafael', 'Ortega');
 INSERT INTO vets VALUES (5, 'Henry', 'Stevens');
 INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins');
 
-INSERT INTO users VALUES (1011,'secret')
-INSERT INTO users VALUES (1012,'passwd')
-INSERT INTO users VALUES (1013,'admin123')
-INSERT INTO users VALUES (1014,'october123')
-INSERT INTO users VALUES (1015,'devops123')
+INSERT INTO mfs_users VALUES (1011,'secret')
+INSERT INTO mfs_users VALUES (1012,'passwd')
+INSERT INTO mfs_users VALUES (1013,'admin123')
+INSERT INTO mfs_users VALUES (1014,'october123')
+INSERT INTO mfs_users VALUES (1015,'devops123')
 
 INSERT INTO token VALUES (1011,'qwertyuiop')
 INSERT INTO token VALUES (1012,'asdfghjkl')
