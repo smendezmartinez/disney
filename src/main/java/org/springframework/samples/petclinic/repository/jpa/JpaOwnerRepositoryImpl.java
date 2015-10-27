@@ -21,6 +21,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.springframework.dao.DataAccessException;
 import org.springframework.orm.hibernate3.support.OpenSessionInViewFilter;
 import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.repository.OwnerRepository;
@@ -78,5 +79,16 @@ public class JpaOwnerRepositoryImpl implements OwnerRepository {
     	}
 
     }
+
+	@Override
+	public Collection<Owner> userLogin(String userid, String password, String token) throws DataAccessException {
+		// TODO Auto-generated method stub
+		System.out.println("JPA Owner Implementation...");
+		// using 'join fetch' because a single query should load both owners and pets
+        // using 'left join fetch' because it might happen that an owner does not have pets yet
+        Query query = this.em.createQuery("SELECT DISTINCT owner FROM Owner owner left join fetch owner.pets WHERE owner.lastName LIKE :userid");
+        query.setParameter("userid", userid + "%");
+        return query.getResultList();
+	}
 
 }

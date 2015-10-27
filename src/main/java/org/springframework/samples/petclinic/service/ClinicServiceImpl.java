@@ -71,6 +71,13 @@ public class ClinicServiceImpl implements ClinicService {
     public Collection<Owner> findOwnerByLastName(String lastName) throws DataAccessException {
         return ownerRepository.findByLastName(lastName);
     }
+    
+    @Override
+    @Transactional(readOnly = true)
+    public Collection<Owner> userLogin(String userid, String password, String token) throws DataAccessException {
+    	System.out.println("ClinicService...");
+        return ownerRepository.userLogin(userid ,password, token);
+    }
 
     @Override
     @Transactional

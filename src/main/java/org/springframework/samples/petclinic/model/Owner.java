@@ -56,7 +56,21 @@ public class Owner extends Person {
     @NotEmpty
     @Digits(fraction = 0, integer = 10)
     private String telephone;
+    
+    
+    /** Added for MFS**/ 
+    @Column(name = "userid")
+    @NotEmpty
+    private String userid;
 
+    @Column(name = "passwd")
+    @NotEmpty
+    private String password;
+    
+   
+
+	/** ------**/ 
+    
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets;
 
@@ -84,10 +98,30 @@ public class Owner extends Person {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+    
+    /** Added for MFS**/ 
 
-    protected void setPetsInternal(Set<Pet> pets) {
+    public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	/** ------**/ 
+	protected void setPetsInternal(Set<Pet> pets) {
         this.pets = pets;
     }
+    
 
     protected Set<Pet> getPetsInternal() {
         if (this.pets == null) {
@@ -148,6 +182,8 @@ public class Owner extends Person {
                 .append("address", this.address)
                 .append("city", this.city)
                 .append("telephone", this.telephone)
+                .append("userid", this.userid)
+                .append("password", this.password)
                 .toString();
     }
 }

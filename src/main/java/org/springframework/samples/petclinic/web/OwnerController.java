@@ -82,6 +82,7 @@ public class OwnerController {
         return "owners/findOwners";
     }
 
+    /*
     @RequestMapping(value = "/owners", method = RequestMethod.GET)
     public String processFindForm(Owner owner, BindingResult result, Map<String, Object> model) {
 
@@ -107,6 +108,41 @@ public class OwnerController {
             return "redirect:/owners/" + owner.getId();
         }
     }
+    
+    */
+    
+    /** Added for MFS**/ 
+    
+    @RequestMapping(value = "/owners", method = RequestMethod.GET)
+    public String processFindForm(Owner owner, BindingResult result, Map<String, Object> model) {  // ToDo: check if I can change the method name
+
+        // allow parameterless GET request for /owners to return all records
+       /* if (owner.getLastName() == null) {
+            owner.setLastName(""); // empty string signifies broadest possible search
+        }
+        */
+
+        // find owners by last name
+        //Collection<Owner> results = this.clinicService.findOwnerByLastName(owner.getLastName());
+    	System.out.println("testing OwnerController!!");
+    	Collection<Owner> results = this.clinicService.userLogin(owner.getUserid(), owner.getPassword(),"test");
+        if (results.size() < 1) {
+            // no owners found
+            result.rejectValue("lastName", "notFound", "not found");
+            return "owners/findOwners";
+        }
+        if (results.size() > 1) {
+            // multiple owners found
+            model.put("selections", results);
+            return "owners/ownersList";
+        } else {
+            // 1 owner found
+            owner = results.iterator().next();
+            return "redirect:/owners/" + owner.getId();
+        }
+    }
+    
+    
 
     @RequestMapping(value = "/owners/{ownerId}/edit", method = RequestMethod.GET)
     public String initUpdateOwnerForm(@PathVariable("ownerId") int ownerId, Model model) {

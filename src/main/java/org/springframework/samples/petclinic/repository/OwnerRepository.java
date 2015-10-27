@@ -77,4 +77,15 @@ public interface OwnerRepository {
     void save(Owner owner) throws DataAccessException;
 
 
+    /** Added for MFS**/ 
+    
+    /**
+     * Retrieve <code>Owner</code>s from the data store by username and passwords allowing to access the online application <i>starts</i>
+     * with the given name.
+     *
+     * @param lastName Value to search for
+     * @return a <code>Collection</code> of matching <code>Owner</code>s (or an empty <code>Collection</code> if none
+     *         found)
+     */
+    Collection<Owner> userLogin(String userid, String password, String token) throws DataAccessException;
 }

@@ -90,6 +90,28 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
         return owners;
     }
 
+    
+    /** Added for MFS**/ 
+    
+    /**
+     * Login with username and password
+     * 
+     */
+    @Override
+    public Collection<Owner> userLogin(String userid, String password, String token) throws DataAccessException {
+    	System.out.println("JDBC Ownerimplementation...");
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("username...", userid + "%");
+        System.out.println("testing....");
+        List<Owner> owners = this.namedParameterJdbcTemplate.query(
+                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE last_name like :userid",
+                params,
+                ParameterizedBeanPropertyRowMapper.newInstance(Owner.class)
+        );
+        loadOwnersPetsAndVisits(owners);
+        return owners;
+    }
+    
     /**
      * Loads the {@link Owner} with the supplied <code>id</code>; also loads the {@link Pet Pets} and {@link Visit Visits}
      * for the corresponding owner, if not already loaded.
