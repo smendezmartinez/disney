@@ -10,7 +10,7 @@
 
 <jsp:include page="../fragments/headTag.jsp"/>
 
-<body>
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/mfs/resources/images/map-mfs.jpg)">
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
     
