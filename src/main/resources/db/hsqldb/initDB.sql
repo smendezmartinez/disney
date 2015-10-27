@@ -8,6 +8,10 @@ DROP TABLE owners IF EXISTS;
 
 DROP TABLE token IF EXISTS;
 DROP TABLE mfs_users IF EXISTS;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1351ec6bb47517d11cf84adf49545bf9a09f9eab
 
 
 CREATE TABLE vets (
