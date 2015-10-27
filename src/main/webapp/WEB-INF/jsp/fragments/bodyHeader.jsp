@@ -4,7 +4,7 @@
 
 <spring:url value="/resources/images/mfs_header2.PNG" var="banner"/> 
 <img src="${banner}"/>
-
+ 
 
 <div class="navbar" style="width: 800px; font-family:'DIN Next W01 Regular';">
     <div class="navbar-inner">
