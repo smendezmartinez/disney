@@ -34,11 +34,16 @@ INSERT INTO types VALUES (4, 'snake');
 INSERT INTO types VALUES (5, 'bird');
 INSERT INTO types VALUES (6, 'hamster');
 
-INSERT INTO owners VALUES (1, 'John', 'Smith', '110 W. Liberty St.', 'Madison', '6085551023','1011','secret','qwertyuiop');
+INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023','1011','secret','qwertyuiop');
 INSERT INTO owners VALUES (2, 'Betty', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749','1012','passwd','asdfghjkl');
 INSERT INTO owners VALUES (3, 'Eduardo', 'Rodriquez', '2693 Commerce St.', 'McFarland', '6085558763','1013','admin123','zxcvbnm');
 INSERT INTO owners VALUES (4, 'Harold', 'Davis', '563 Friendly St.', 'Windsor', '6085553198','1014','october123','qwertyuiop');
 INSERT INTO owners VALUES (5, 'Peter', 'McTavish', '2387 S. Fair Way', 'Madison', '6085552765','1015','devops123','asdfghjkl');
+INSERT INTO owners VALUES (6, 'Jean', 'Coleman', '105 N. Lake St.', 'Monona', '6085552654','12','12','12');
+INSERT INTO owners VALUES (7, 'Jeff', 'Black', '1450 Oak Blvd.', 'Monona', '6085555387','12','12','12');
+INSERT INTO owners VALUES (8, 'Maria', 'Escobito', '345 Maple St.', 'Madison', '6085557683','12','12','12');
+INSERT INTO owners VALUES (9, 'David', 'Schroeder', '2749 Blackhawk Trail', 'Madison', '6085559435','12','12','12');
+INSERT INTO owners VALUES (10, 'Carlos', 'Estaban', '2335 Independence La.', 'Waunakee', '6085555487','12','12');
 
 
 INSERT INTO pets VALUES (1, 'Leo', '2010-09-07', 1, 1);
@@ -49,7 +54,7 @@ INSERT INTO pets VALUES (5, 'Iggy', '2010-11-30', 3, 4);
 INSERT INTO pets VALUES (6, 'George', '2010-01-20', 4, 5);
 
 
-INSERT INTO visits VALUES (1, 1, '2013-01-01', 'rabies shot');
-INSERT INTO visits VALUES (2, 1, '2013-01-02', 'rabies shot');
-INSERT INTO visits VALUES (3, 1, '2013-01-03', 'neutered');
-INSERT INTO visits VALUES (4, 1, '2013-01-04', 'spayed');
+INSERT INTO visits VALUES (1, 7, '2013-01-01', 'rabies shot');
+INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot');
+INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered');
+INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed');
