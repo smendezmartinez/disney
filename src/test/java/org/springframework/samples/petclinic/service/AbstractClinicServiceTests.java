@@ -181,7 +181,7 @@ public abstract class AbstractClinicServiceTests {
 	@Test
 	@Transactional
 	public void insertVisit() {
-	    Pet pet7 = this.clinicService.findPetById(7);
+	    Pet pet7 = this.clinicService.findPetById(1);
 	    int found = pet7.getVisits().size();
 	    Visit visit = new Visit();
 	    pet7.addVisit(visit);
@@ -189,7 +189,7 @@ public abstract class AbstractClinicServiceTests {
 	    // both storeVisit and storePet are necessary to cover all ORM tools
 	    this.clinicService.saveVisit(visit);
 	    this.clinicService.savePet(pet7);
-	    pet7 = this.clinicService.findPetById(7);
+	    pet7 = this.clinicService.findPetById(1);
 	    assertEquals(found + 1, pet7.getVisits().size());
 	    assertNotNull("Visit Id should have been generated", visit.getId());
 	}

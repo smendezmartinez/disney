@@ -9,7 +9,7 @@
 
 <jsp:include page="../fragments/headTag.jsp"/>
 
-<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/mfs/resources/images/map-mfs.jpg)">
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/map-mfs.jpg)">
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
@@ -55,7 +55,7 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
 	
 	<!-- CHANGE ROOT -->
 	<!-- div 
-	<img src="/mfs/resources/images/mfs2.jpg" alt="testing" >   
+	<img src="/petclinic/resources/images/mfs2.jpg" alt="testing" >   
 	</div-->
 	
 		

@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.samples</groupId>
-	<!--artifactId>spring-petclinic</artifactId-->
-	<artifactId>mfs</artifactId>
+	<artifactId>spring-petclinic</artifactId>
+	<!-- artifactId>mfs</artifactId -->
 	<version>1.0.0-SNAPSHOT</version>
 
-	<!--name>petclinic</name-->
-	<name>mfs</name>
+	<name>petclinic</name>
+	<!-- name>mfs</name -->
 	<packaging>war</packaging>
 
 	<properties>
@@ -397,8 +397,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-					<!--warName>petclinic</warName-->
-					<warName>mfs</warName>
+					<warName>petclinic</warName>
+					<!-- warName>mfs</warName -->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -444,8 +444,8 @@
 				<configuration>
 					<server>tomcat-development-server</server>
 					<port>9966</port>
-					<!--path>/petclinic</path-->
-					<path>/mfs</path>
+					<path>/petclinic</path>
+					<!-- path>/mfs</path -->
 				</configuration>
 			</plugin>
 		</plugins>
