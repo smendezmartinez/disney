@@ -12,7 +12,7 @@
 
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
-  &nbsp;&nbsp;
+  &nbsp;
     
     <!-- h2><fmt:message key="welcome"/></h2 -->
     <spring:url value="/resources/images/mfs4.png" htmlEscape="true" var="petsImage"/>
