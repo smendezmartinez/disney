@@ -113,7 +113,7 @@ public class OwnerController {
     
     /** Added for MFS**/ 
     
-    @RequestMapping(value = "/owners", method = RequestMethod.GET)
+    @RequestMapping(value = "/owners", method = RequestMethod.POST)
     public String processFindForm(Owner owner, BindingResult result, Map<String, Object> model) {  // ToDo: check if I can change the method name
 
         // allow parameterless GET request for /owners to return all records
@@ -124,8 +124,7 @@ public class OwnerController {
 
         // find owners by last name
         //Collection<Owner> results = this.clinicService.findOwnerByLastName(owner.getLastName());
-    	System.out.println("testing OwnerController!!");
-    	Collection<Owner> results = this.clinicService.userLogin(owner.getUserid(), owner.getPassword(),"test");
+    	Collection<Owner> results = this.clinicService.userLogin(owner.getUserid(), owner.getPasswd(), owner.getToken());
         if (results.size() < 1) {
             // no owners found
             result.rejectValue("lastName", "notFound", "not found");

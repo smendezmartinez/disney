@@ -65,7 +65,11 @@ public class Owner extends Person {
 
     @Column(name = "passwd")
     @NotEmpty
-    private String password;
+    private String passwd;
+    
+    @Column(name = "token")
+    @NotEmpty
+    private String token;
     
    
 
@@ -109,12 +113,24 @@ public class Owner extends Person {
 		this.userid = userid;
 	}
 
-	public String getPassword() {
-		return password;
+
+	
+	
+
+	public String getPasswd() {
+		return passwd;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
 	}
 
 	/** ------**/ 
@@ -183,7 +199,7 @@ public class Owner extends Person {
                 .append("city", this.city)
                 .append("telephone", this.telephone)
                 .append("userid", this.userid)
-                .append("password", this.password)
+                .append("passwd", this.passwd)
                 .toString();
     }
 }

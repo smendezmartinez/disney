@@ -20,7 +20,7 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
     <h2>Online Services</h2>
 
  <spring:url value="/owners.html" var="formUrl"/>
-    <form:form modelAttribute="owner" action="${fn:escapeXml(formUrl)}" method="get" class="form-horizontal"
+    <form:form modelAttribute="owner" action="${fn:escapeXml(formUrl)}" method="post" class="form-horizontal"
                id="search-owner-form">
         <fieldset>
             <div class="control-group" id="userid">
@@ -30,11 +30,17 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
             </div>
            
            
-           <div class="control-group" id="password">
+           	<div class="control-group" id="passwd">
                 <label class="control-label">Password </label>
-                <form:input path="password" size="30" maxlength="80"/>
+                <form:input path="passwd" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
+            
+            <!-- div class="control-group" id="token">
+                <label class="control-label">Token </label>
+                <form:input path="token" size="30" maxlength="80" type="password"/>
+                <span class="help-inline"><form:errors path="*"/></span>
+            </div -->
             
             <div class="form-actions">
                 <button  
@@ -46,6 +52,11 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
 <!-- /div>
 &nbsp;
 	</div -->
+	
+	<!-- CHANGE ROOT -->
+	<!-- div 
+	<img src="/mfs/resources/images/mfs2.jpg" alt="testing" >   
+	</div-->
 	
 		
     <br/>

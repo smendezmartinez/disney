@@ -54,7 +54,8 @@ CREATE TABLE owners (
   city       VARCHAR(80),
   telephone  VARCHAR(20),
   userid     VARCHAR(50),
-  passwd     VARCHAR(50)
+  passwd     VARCHAR(50),
+  token      VARCHAR(50)
 );
 CREATE INDEX owners_last_name ON owners (last_name);
 

@@ -75,8 +75,7 @@ public class ClinicServiceImpl implements ClinicService {
     @Override
     @Transactional(readOnly = true)
     public Collection<Owner> userLogin(String userid, String password, String token) throws DataAccessException {
-    	System.out.println("ClinicService...");
-        return ownerRepository.userLogin(userid ,password, token);
+    	return ownerRepository.userLogin(userid ,password, token);
     }
 
     @Override

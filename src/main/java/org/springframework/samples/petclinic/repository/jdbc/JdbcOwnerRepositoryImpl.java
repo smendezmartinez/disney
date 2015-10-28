@@ -104,7 +104,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
         params.put("username...", userid + "%");
         System.out.println("testing....");
         List<Owner> owners = this.namedParameterJdbcTemplate.query(
-                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE last_name like :userid",
+                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE userid = :userid AND passwd = :password",
                 params,
                 ParameterizedBeanPropertyRowMapper.newInstance(Owner.class)
         );
