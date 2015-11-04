@@ -10,8 +10,10 @@
 
 <jsp:include page="../fragments/headTag.jsp"/>
 
-<body>
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture9.jpg)">
+
 <div class="container">
+
     <jsp:include page="../fragments/bodyHeader.jsp"/>
 
     <h2>Owner Information</h2>

@@ -8,15 +8,18 @@
 
 <jsp:include page="fragments/headTag.jsp"/>
 
-<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/map-mfs.jpg)">
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture9.jpg)">
 
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
-  &nbsp;&nbsp;
     
     <!-- h2><fmt:message key="welcome"/></h2 -->
-    <spring:url value="/resources/images/mfs4.png" htmlEscape="true" var="petsImage"/>
-    <img src="${petsImage}"/>
+
+<p>&nbsp;&nbsp;</p>
+
+
+    
+    <img style="padding-left:120px;" src="http://www.machinetomachinemagazine.com/wp-content/uploads/2015/09/ACCENTURE.gif" alt="testing" >  
 
 
 	

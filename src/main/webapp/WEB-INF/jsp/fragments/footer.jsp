@@ -1,14 +1,15 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<table class="footer">
+<p>&nbsp;</p>
+<spring:url value="/resources/images/banner-accenture.jpg" var="banner"/> 
+<img src="${banner}"/>
+
+<table class="footer" width="640px">
     <tr>
 								
-<td> <p> &copy;2014 MFS Investment Management 29673.1</p>
+<td> <p style="font-size:10px; text-align:right;"> Copyright 2001-2015 Accenture. All Rights Reserved. Accenture Confidential. For Internal Use Only.</p>
 </td>								
 								   
     </tr>
 </table>
-
-<spring:url value="/resources/images/mfs_banner.png" var="banner"/> 
-<img src="${banner}"/>
 
