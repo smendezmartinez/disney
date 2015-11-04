@@ -36,11 +36,11 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             
-            <!--div class="control-group" id="token">
+            <div class="control-group" id="token">
                 <label class="control-label">Token </label>
                 <form:input path="token" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
-            </div-->
+            </div>
             
             <div class="form-actions">
                 <button  
@@ -54,9 +54,9 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
 	</div -->
 	
 	<!-- CHANGE ROOT -->
-	<!-- div>
+	<div>
 	<img src="https://www.mfs.com/subs/home-microsite/img/nav/logo_mfs.png" alt="testing" >   
-	</div-->
+	</div>
 	
 		
     <br/>
