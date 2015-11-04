@@ -54,8 +54,8 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);" -->
 	</div -->
 	
 	<!-- CHANGE ROOT -->
-	<!-- div 
-	<img src="/petclinic/resources/images/mfs2.jpg" alt="testing" >   
+	<!-- div>
+	<img src="https://www.mfs.com/subs/home-microsite/img/nav/logo_mfs.png" alt="testing" >   
 	</div-->
 	
 		
