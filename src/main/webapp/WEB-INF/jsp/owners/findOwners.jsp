@@ -8,9 +8,10 @@
 <html lang="en">
 
 <jsp:include page="../fragments/headTag.jsp"/>
- 
-<!-- body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture17.jpg)" -->
-<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture9.jpg)">
+
+<!-- body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture9.jpg)" --> 
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture17.jpg)">
+
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
   
@@ -33,11 +34,11 @@
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             
-            <!-- div class="control-group" id="token">
+            <div class="control-group" id="token">
                 <label class="control-label">Token </label>
                 <form:input path="token" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
-            </div -->
+            </div>
             
             <div class="form-actions">
                 <button  
