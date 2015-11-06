@@ -9,8 +9,8 @@
 
 <jsp:include page="../fragments/headTag.jsp"/>
  
-<!-- body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture14.jpg)" -->
-<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture9.jpg)">
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture14.jpg)">
+<!-- body style="background-repeat: no-repeat; background-size: cover; background-image: url(/petclinic/resources/images/accenture9.jpg)" -->
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
   
@@ -26,19 +26,18 @@
                 <form:input path="userid" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
-           
-           
-           	<div class="control-group" id="passwd">
+          
+		 	<div class="control-group" id="passwd">
                 <label class="control-label">Password </label>
                 <form:input path="passwd" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             
-            <!-- div class="control-group" id="token">
+            <div class="control-group" id="token">
                 <label class="control-label">Token </label>
                 <form:input path="token" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
-            </div -->
+            </div>
             
             <div class="form-actions">
                 <button  
