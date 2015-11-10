@@ -11,7 +11,6 @@
 
 <jsp:include page="../fragments/bodyTag.jsp"/>
 
-
 <div class="container">
     <jsp:include page="../fragments/bodyHeader.jsp"/>
   
