@@ -33,11 +33,11 @@
                 <span class="help-inline"><form:errors path="*"/></span>
             </div>
             
-            <!-- div class="control-group" id="token">
+            <div class="control-group" id="token">
                 <label class="control-label">Token </label>
                 <form:input path="token" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
-            </div -->
+            </div>
              
             <div class="form-actions">
                 <button  

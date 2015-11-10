@@ -1,6 +1,7 @@
 .container {
     width: 646px;
     background-color: whitesmoke;
+    margin-left:720px;
 }
 
 .form-horizontal {
