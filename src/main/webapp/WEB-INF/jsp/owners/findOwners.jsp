@@ -39,7 +39,7 @@
                 <form:input path="token" size="30" maxlength="80" type="password"/>
                 <span class="help-inline"><form:errors path="*"/></span>
             </div -->
-            
+             
             <div class="form-actions">
                 <button  
                 type="submit">Login</button>
